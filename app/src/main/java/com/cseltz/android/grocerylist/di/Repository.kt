@@ -1,13 +1,21 @@
 package com.cseltz.android.grocerylist.di
 
-import android.content.Context
-import androidx.room.Room
-import com.cseltz.android.grocerylist.data.ItemDatabase
+import com.cseltz.android.grocerylist.data.Item
+import com.cseltz.android.grocerylist.data.ItemDao
 
-// Local and remote databases go here
-class Repository(context: Context) {
+class Repository(private val itemDao: ItemDao) {
 
-        val database = Room.databaseBuilder(context, ItemDatabase::class.java, "item_db")
-            .build()
 
+    // Dao functions
+    suspend fun insertItem(item: Item) = itemDao.insertItem(item)
+
+    suspend fun insertItemList(items: List<Item>) = itemDao.insertItemList(items)
+
+    suspend fun deleteItem(item: Item) = itemDao.deleteItem(item)
+
+    suspend fun updateItem(item: Item) = itemDao.updateItem(item)
+
+    fun getAllItems() = itemDao.getAllItems()
+
+    suspend fun deleteAllItems() = itemDao.deleteAllItems()
 }

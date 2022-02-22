@@ -37,18 +37,10 @@ class ListFragment: Fragment() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        // TODO remove temp list
-        val tempList = createTempList(100)
-        adapter.submitList(tempList)
+        viewModel.items.observe(viewLifecycleOwner) { items ->
+            adapter.submitList(items)
+        }
 
         return view
-    }
-
-    private fun createTempList(size: Int): List<Item> {
-        val list = mutableListOf<Item>()
-        for (i in 0 until size) {
-            list.add(Item(name = "Item $i"))
-        }
-        return list
     }
 }
