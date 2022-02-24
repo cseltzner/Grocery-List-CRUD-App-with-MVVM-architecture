@@ -1,7 +1,26 @@
 <resources>
     <string name="app_name">Grocery List</string>
-    <string name="new_item">New Item</string>
+    <string name="add_edit_item">Add/Edit Item</string>
     <string name="item_name">Item name</string>
     <string name="quantity">Quantity</string>
     <string name="add_item">Add Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="menu_delete_all">Delete all</string>
+    <string name="menu_about">About</string>
+    <string name="about_message">This app was created for practicing MVVM architecture with manual
+    dependency injection. This is my first attempt at following architecture patterns and avoiding
+    spaghetti code. -CS</string>
+    <string name="about">About</string>
+
+
+    <!-- Delete Dialog -->
+    <string name="dialog_delete_confirmation">Delete item</string>
+    <string name="dialog_delete_message">Are you sure you want to delete this item?</string>
+    <string name="dialog_confirm">Yes</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="dialog_delete_all_title">Delete all items</string>
+    <string name="dialog_delete_all_message">Are you sure you want to delete all items?</string>
+    <string name="dialog_delete_all_confirm">Delete all</string>
+    <string name="dialog_delete_all_cancel">Cancel</string>
 </resources>

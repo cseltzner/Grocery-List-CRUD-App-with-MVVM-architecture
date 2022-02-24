@@ -6,9 +6,7 @@ import androidx.lifecycle.ViewModelStoreOwner
 import com.cseltz.android.grocerylist.data.ItemDao
 import com.cseltz.android.grocerylist.ui.list.ListViewModel
 
-class ListViewModelFactory(private val repository: Repository): ViewModelProvider.Factory {
-
-
+class ViewModelFactory(private val repository: Repository): ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return modelClass.getConstructor(Repository::class.java)

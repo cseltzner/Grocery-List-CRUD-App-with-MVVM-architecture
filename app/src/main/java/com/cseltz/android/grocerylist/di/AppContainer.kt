@@ -14,5 +14,5 @@ class AppContainer(context: Context) {
 
     private val database = Room.databaseBuilder(context, ItemDatabase::class.java, "item_db").build()
     val repository = Repository(database.itemDao())
-    val listViewModelFactory = ListViewModelFactory(repository)
+    val viewModelFactory = ViewModelFactory(repository)
 }

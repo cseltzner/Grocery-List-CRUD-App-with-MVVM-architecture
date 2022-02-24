@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/CS/AndroidStudioProjects/GroceryList/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/CS/AndroidStudioProjects/GroceryList/app/src/main/res/layout/fragment_about.xml" value="0.3546875" />
         <entry key="..\:/Users/CS/AndroidStudioProjects/GroceryList/app/src/main/res/layout/fragment_list.xml" value="0.3546875" />
         <entry key="..\:/Users/CS/AndroidStudioProjects/GroceryList/app/src/main/res/layout/fragment_new_item.xml" value="0.3546875" />
         <entry key="..\:/Users/CS/AndroidStudioProjects/GroceryList/app/src/main/res/layout/main_list_item.xml" value="0.3546875" />
+        <entry key="..\:/Users/CS/AndroidStudioProjects/GroceryList/app/src/main/res/menu/menu_main.xml" value="0.3546875" />
       </map>
     </option>
   </component>
